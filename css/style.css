@@ -1,0 +1,24 @@
+/* --- Variables CSS (Moderno) --- */
+:root {
+  --primary-color: #6c63ff;
+  --accent-color: #00f50c;
+  --dark-bg: #0f172a;
+  --card-bg: #1e293b;
+  --white: #f8fafc;
+  --font-title: "Space Grotesk", sans-serif;
+  --font-body: "Montserrat", sans-serif;
+}
+
+/* Reset para poner todo a 0 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--dark-bg);
+  color: var(--white);
+  line-height: 1.6;
+}

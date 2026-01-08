@@ -22,3 +22,50 @@ body {
   color: var(--white);
   line-height: 1.6;
 }
+
+/* --- header y nav--- */
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 5%;
+  position: sticky;
+  top: 0;
+  background-color: rgba(15, 23, 42, 0.9);
+  backdrop-filter: blur(10px);
+  z-index: 100;
+}
+
+.logo {
+  font-family: var(--font-title);
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.logo::first-letter {
+  color: var(--accent-color);
+}
+
+nav a {
+  color: var(--white);
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--accent-color);
+}
+
+nav a:focus {
+  outline: 2px dashed var(--accent-color);
+  outline-offset: 4px;
+}
+
+.btnNav {
+  background: var(--primary-color);
+  padding: 8px 20px;
+  border-radius: 50px;
+}

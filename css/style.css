@@ -144,3 +144,50 @@ nav a:focus {
     transform: translateY(0);
   }
 }
+
+.container {
+  padding: 5rem 10%;
+}
+
+.sectionTitle {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.sectionTitle h2 {
+  font-size: 2.5rem;
+  font-family: var(--font-title);
+}
+
+.gridCards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  background: var(--card-bg);
+  padding: 2rem;
+  border-radius: 15px;
+  text-align: center;
+  transition: transform 0.3s;
+  border: 1px solid transparent;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  border-color: var(--primary-color);
+}
+
+.icon {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.card:last-child .icon {
+  color: var(--white);
+}
+
+.card:nth-child(2) .icon {
+  color: var(--accent-color);
+}

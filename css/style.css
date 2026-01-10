@@ -191,3 +191,73 @@ nav a:focus {
 .card:nth-child(2) .icon {
   color: var(--accent-color);
 }
+
+.visualSection {
+  background: var(--white);
+  color: var(--dark-bg);
+  padding: 4rem 10%;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  overflow: hidden;
+}
+
+.blendContainer {
+  position: relative;
+  width: 400px;
+  height: 400px;
+}
+
+.textLayer {
+  font-family: var(--font-title);
+  font-size: 8rem;
+  font-weight: bold;
+  color: #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.imageLayer {
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/creative.jpg");
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  mix-blend-mode: difference;
+  border-radius: 50%;
+  animation: rotate 20s linear infinite;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* --- footer --- */
+footer {
+  padding: 2rem;
+  background: #000;
+  text-align: center;
+  border-top: 1px solid #333;
+}
+
+.socials a {
+  color: var(--white);
+  font-size: 1.5rem;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+.socials a:last-child {
+  margin-right: 0;
+}
+
+.socials a:hover {
+  color: var(--primary-color);
+}

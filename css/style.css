@@ -261,3 +261,43 @@ footer {
 .socials a:hover {
   color: var(--primary-color);
 }
+
+/* --- mediaqueries para responsividad --- */
+@media (max-width: 768px) {
+  .heroContent h1 {
+    font-size: 2.5rem;
+  }
+
+  .visualSection {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .textLayer {
+    /* Corregido de .text-layer a .textLayer según tu HTML */
+    font-size: 5rem;
+  }
+
+  .blendContainer {
+    width: 300px;
+    height: 300px;
+  }
+
+  .main {
+    /* Corregido de .mainHeader a .main según tu clase superior */
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  nav {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  nav a {
+    margin-left: 0;
+  }
+}

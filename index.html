@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShowCase CSS</title>
+
+    <!-- Añadimos las fuentes y los iconos -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Space+Grotesk:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="main">
+      <div class="logo">LUMINA.</div>
+      <nav>
+        <a href="#" class="active">Inicio</a>
+        <a href="#works">Proyectos</a>
+        <a href="#contact" class="btnNav"
+          >Contacto <i class="fa-solid fa-arrow-right"></i
+        ></a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="hero" class="heroSection">
+        <div class="overlay"></div>
+        <div class="heroContent">
+          <h1>Diseño que <span class="highlight">Impacta</span></h1>
+          <p>Creamos experiencias digitales inmersivas.</p>
+          <button class="btnPrimary">
+            <i class="fa-solid fa-play"></i> Ver Showreel
+          </button>
+        </div>
+      </section>
+
+      <section id="features" class="container">
+        <div class="sectionTitle">
+          <h2>Nuestras Skills</h2>
+          <div class="underline"></div>
+        </div>
+
+        <div class="gridCards">
+          <div class="card">
+            <div class="icon">
+              <i class="fa-solid fa-layer-group"></i>
+            </div>
+            <h3>UI Design</h3>
+            <p>Interfaces limpias y modernas.</p>
+          </div>
+          <div class="card">
+            <div class="icon">
+              <i class="fa-solid fa-code"></i>
+            </div>
+            <h3>Desarrollo</h3>
+            <p>Código semántico y optimizado.</p>
+          </div>
+          <div class="card">
+            <div class="icon">
+              <i class="fa-solid fa-wand-magic-sparkles"></i>
+            </div>
+            <h3>Branding</h3>
+            <p>Identidad visual con carácter.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="visualArt" class="visualSection">
+        <div class="blendContainer">
+          <div class="textLayer">ARTE</div>
+          <div class="imageLayer"></div>
+        </div>
+        <div>
+          <h3>Fusión Visual</h3>
+          <p>
+            Uso de <code>mix-blend-mode</code> para crear composiciones únicas.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer">
+        <p>&copy; 2026 Pedro Díaz.</p>
+        <div class="socials">
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#"><i class="fa-brands fa-github"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
